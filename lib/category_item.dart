@@ -11,13 +11,12 @@ class CategoryItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
-          gradient: LinearGradient(colors: [
-        color.withOpacity(0.7),
-        color
-      ]
-      begin: Alignment.topLeft, //Beginn oben links nach unten rechts
-      end: Alignment.bottomRight
-      )),
+          gradient: LinearGradient(
+            colors: [color.withOpacity(0.7), color],
+            begin: Alignment.topLeft, //Beginn oben links nach unten rechts
+            end: Alignment.bottomRight,
+          ),
+          borderRadius: BorderRadius.circular(15)),
       child: Text(title), //durchsichtigkeit der Farbe
     );
   }
